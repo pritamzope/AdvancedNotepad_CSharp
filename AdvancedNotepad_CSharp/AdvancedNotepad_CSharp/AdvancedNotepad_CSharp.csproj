@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CBECAB1-B39C-4176-A9AC-C7B006124A9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdvancedNotepad_CSharp</RootNamespace>
+    <AssemblyName>AdvancedNotepad_CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <PublisherName>Pritam Zope</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sbstnblnd-Plateau-Apps-text-editor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_Form.Designer.cs">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Find_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find_Form.Designer.cs">
+      <DependentUpon>Find_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoTo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoTo_Form.Designer.cs">
+      <DependentUpon>GoTo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStripZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MinMaxButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyRichTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyRichTextBox.Designer.cs">
+      <DependentUpon>MyRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PreviewHTMLPage_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewHTMLPage_Form.Designer.cs">
+      <DependentUpon>PreviewHTMLPage_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRichTextBox.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Replace_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Replace_Form.Designer.cs">
+      <DependentUpon>Replace_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RunInBrowser_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunInBrowser_Form.Designer.cs">
+      <DependentUpon>RunInBrowser_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Run_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Run_Form.Designer.cs">
+      <DependentUpon>Run_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControlZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStripZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="About_Form.resx">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_Form.resx">
+      <DependentUpon>Find_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoTo_Form.resx">
+      <DependentUpon>GoTo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyRichTextBox.resx">
+      <DependentUpon>MyRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewHTMLPage_Form.resx">
+      <DependentUpon>PreviewHTMLPage_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Replace_Form.resx">
+      <DependentUpon>Replace_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunInBrowser_Form.resx">
+      <DependentUpon>RunInBrowser_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Run_Form.resx">
+      <DependentUpon>Run_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ccppicon.ico" />
+    <Content Include="htmlicon.ico" />
+    <None Include="myicon.png" />
+    <Content Include="vbicon.ico" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\saveas.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\prev.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\goto.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\browse.png" />
+    <Content Include="csharpicon.ico" />
+    <Content Include="Sbstnblnd-Plateau-Apps-text-editor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".c">
+      <Visible>False</Visible>
+      <Description>C File</Description>
+      <Progid>4</Progid>
+      <DefaultIcon>ccppicon.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".cpp">
+      <Visible>False</Visible>
+      <Description>C++ File</Description>
+      <Progid>5</Progid>
+      <DefaultIcon>ccppicon.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".cs">
+      <Visible>False</Visible>
+      <Description>C Sharp File</Description>
+      <Progid>2</Progid>
+      <DefaultIcon>csharpicon.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".html">
+      <Visible>False</Visible>
+      <Description>HTML File</Description>
+      <Progid>6</Progid>
+      <DefaultIcon>htmlicon.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".txt">
+      <Visible>False</Visible>
+      <Description>Text File</Description>
+      <Progid>1</Progid>
+      <DefaultIcon>Sbstnblnd-Plateau-Apps-text-editor.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".vb">
+      <Visible>False</Visible>
+      <Description>Visual Basic File</Description>
+      <Progid>3</Progid>
+      <DefaultIcon>vbicon.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
